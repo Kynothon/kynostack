@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://10.0.0.205:31112
+functions:
+  discoverer:
+    lang: gstrust-http-template
+    handler: ./discoverer
+    image: discoverer:latest
+

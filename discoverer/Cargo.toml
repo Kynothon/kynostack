@@ -1,0 +1,16 @@
+[package]
+name = "handler"
+version = "0.1.0"
+authors = ["Gnaphron <gnaphron@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.14"
+gst = { package = "gstreamer", features = ["ser_de"] }
+gst-pbutils = { package = "gstreamer-pbutils" }
+anyhow = "1.0"
+derive_more = "0.99.5"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+glib = "0.10.3"
+gstreamer-sys = "0.9.1"
